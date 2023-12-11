@@ -1,0 +1,200 @@
+/*в inline одстаивается подстраивает по шируну текста не можем*/
+/*в блоке можно задать ширину и высоту*/
+/*z-index -1 мещение на задний план*/
+/*Любые позиционированные элементы на веб-странице
+могут накладываться друг на друга*/
+#positionmain{
+    top: 5px;
+    font-size: 1.4rem;
+    margin-bottom: 170px;
+}
+
+.statsphoto{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    position: relative; /*позиционироваться относительно своего ближайшего нестатического предка.*/
+}
+
+.Textstyle{
+    display:flex;
+    margin-top: 140px;
+    font-size: 1.4rem; /*шрифт относительно html*/
+    color:black;
+}
+
+.shrift, .historytext{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color:black;
+}
+.likeButton{
+    margin-bottom: 20px;
+    background-color: blanchedalmond;
+    height: 20px;
+    width: 20px;
+}
+#canvas {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+  
+
+/*em диница em позволяет установить размер шрифта элемента относительно размера шрифта его родителя
+размер изменяется у родителя и изменяется у em*/
+/*rem размер для html, относительно html =16px */
+
+@media screen and (min-width: 1024px) and (max-width: 1920px){
+    #positionmain{
+        top: 5px;
+        font-size: 2rem;
+        margin-bottom: 400px;
+    }
+    
+    .statsphoto{
+        display: flex;
+        width: 70%;
+        height: 50%;
+        position: relative; /*позиционироваться относительно своего ближайшего нестатического предка.*/
+    }
+    .Textstyle{
+        display:flex;
+        margin-top: 300px;
+        font-size: 2rem; /*шрифт относительно html*/
+        color: black;
+    }
+    .shrift, .historytext{
+        font-family: 'Playfair Display', serif;
+        font-size: 2rem;
+        color: black;
+    }
+    .likeButton{
+        margin-bottom: 40px;
+        background-color: blanchedalmond;
+        height: 40px;
+        width: 40px;
+    }
+    .gaps{
+        margin-top: 100px;
+    }
+    #canvas {
+        position: relative;
+        width: 100%;
+        height: 60vh;
+        background-color: rgba(255, 0, 0, 0.282);
+    }
+      
+}
+@media screen and (min-width: 320px) and (max-width: 768px){
+    #positionmain{
+        top: 5px;
+        font-size: 1rem;
+        margin-bottom: 70px;
+    }
+    
+    .statsphoto{
+        display: flex;
+        width: 90%;
+        height: 40%;
+        position: relative; /*позиционироваться относительно своего ближайшего нестатического предка.*/
+
+    }
+    .Textstyle{
+        display:flex;
+        margin-top: 140px;
+        font-size: 0.5rem; /*шрифт относительно html*/
+        color: black
+    }
+    .shrift, .historytext{
+        font-family: 'Playfair Display', serif;
+        font-size: 1rem;
+        color: black
+    }
+    .likeButton{
+        margin-bottom: 10px;
+        background-color: blanchedalmond;
+        height: 20px;
+        width: 20px;
+    }
+    #canvas {
+        display: none;
+      }
+      
+}
+@media screen and (min-width: 1024px) and (max-width: 1920px){
+    #positionmain{
+        top: 5px;
+        font-size: 2rem;
+        margin-bottom: 400px;
+    }
+    
+    .statsphoto{
+        display: flex;
+        width: 60%;
+        height: 60%;
+        position: relative; /*позиционироваться относительно своего ближайшего нестатического предка.*/
+    }
+    .Textstyle{
+        display:flex;
+        margin-top: 300px;
+        font-size: 1.4rem; /*шрифт относительно html*/
+        color:black;
+    }
+    .shrift, .historytext{
+        font-family: 'Playfair Display', serif;
+        font-size: 1.4rem;
+        color:black
+    }
+    .likeButton{
+        margin-bottom: 40px;
+        background-color: blanchedalmond;
+        height: 40px;
+        width: 40px;
+    }
+    .gaps{
+        margin-top: 100px;
+    }
+    #canvas {
+        position: relative;
+        width: 100%;
+        height: 60vh;
+        background-color: rgba(255, 0, 0, 0.282);
+    }
+      
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    #positionmain{
+        top: 5px;
+        font-size: 1rem;
+        margin-bottom: 70px;
+    }
+    
+    .statsphoto{
+        display: flex;
+        width: 70%;
+        height: 50%;
+        position: relative; /*позиционироваться относительно своего ближайшего нестатического предка.*/
+
+    }
+    .Textstyle{
+        display:flex;
+        margin-top: 140px;
+        font-size: 20px; /*шрифт относительно html*/
+    }
+    .shrift{
+        font-family: 'Playfair Display', serif;
+        font-size: 28px;
+    }
+    .likeButton{
+        margin-bottom: 10px;
+        background-color: blanchedalmond;
+        height: 20px;
+        width: 20px;
+    }
+    #canvas {
+        display: none;
+      }
+      
+}

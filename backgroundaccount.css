@@ -1,0 +1,206 @@
+#forma{
+     display: flex;
+     width: 250px;
+     height: 200px;
+     margin: 20px 20px 20px 20px;
+     font-size: 20px;
+}
+
+.inputname{
+     position: relative;
+     width: 150px;
+     height: 20px;
+     border: none;
+     border-bottom: 2px solid blue;
+     background-color: transparent;
+     z-index: 2;
+}
+
+.namebefore{
+     margin-top: 30px;
+     margin-bottom: 25px;
+     position: relative;
+}
+
+.inputname + label{
+     position: absolute;
+     cursor: pointer;
+     top: -20px;
+     left: 2px;
+     z-index: 1;
+     transition: 0.4s;
+}
+
+.inputname:focus{
+     background-color: rgba(0, 191, 255, 0.495);
+}
+
+.inputname:placeholder-shown + label{
+     border: none;
+     border-bottom: 2px solid transparent;
+     transform: translateY(20px);
+}
+
+.inputname:focus + label{
+     border: none;
+     border-bottom: 2px solid transparent;
+     transform: translateY(-0.5px);
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+     #forma{
+          display: flex;
+          width: 250px;
+          height: 200px;
+          margin: 20px 20px 20px 20px;
+          font-size: 20px;
+     }
+
+     .inputname{
+          position: relative;
+          width: 70%;
+          height: 30%;
+          border: none;
+          border-bottom: 2px solid blue;
+          background-color: transparent;
+          z-index: 2;
+          
+     }
+
+     .namebefore{
+          margin-top: 30px;
+          margin-bottom: 25px;
+          position: relative;
+     }
+
+     .inputname + label{
+          position: absolute;
+          cursor: pointer;
+          top: -20px;
+          left: 2px;
+          z-index: 1;
+          transition: 0.4s;
+     }
+
+     .inputname:focus{
+          background-color: rgba(0, 191, 255, 0.495);
+     }
+
+     .inputname:placeholder-shown + label{
+          border: none;
+          border-bottom: 2px solid transparent;
+          transform: translateY(20px);
+     }
+
+     .inputname:focus + label{
+          border: none;
+          border-bottom: 2px solid transparent;
+          transform: translateY(-0.5px);
+     } 
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+     #forma{
+          display: flex;
+          width: 250px;
+          height: 200px;
+          margin: 20px 20px 20px 20px;
+          font-size: 20px;
+     }
+
+     .inputname{
+          position: relative;
+          width: 70%;
+          height: 30%;
+          border: none;
+          border-bottom: 2px solid blue;
+          background-color: transparent;
+          z-index: 2;
+          
+     }
+
+     .namebefore{
+          margin-top: 30px;
+          margin-bottom: 25px;
+          position: relative;
+     }
+
+     .inputname + label{
+          position: absolute;
+          cursor: pointer;
+          top: -20px;
+          left: 2px;
+          z-index: 1;
+          transition: 0.4s;
+     }
+
+     .inputname:focus{
+          background-color: rgba(0, 191, 255, 0.495);
+     }
+
+     .inputname:placeholder-shown + label{
+          border: none;
+          border-bottom: 2px solid transparent;
+          transform: translateY(20px);
+     }
+
+     .inputname:focus + label{
+          border: none;
+          border-bottom: 2px solid transparent;
+          transform: translateY(-0.5px);
+     } 
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1920px){
+     #forma{
+          display: flex;
+          width: 250px;
+          height: 200px;
+          margin: 20px 20px 20px 20px;
+          font-size: 20px;
+     }
+
+     .inputname{
+          position: relative;
+          width: 70%;
+          height: 30%;
+          border: none;
+          border-bottom: 2px solid blue;
+          background-color: transparent;
+          z-index: 2;
+          
+     }
+
+     .namebefore{
+          margin-top: 30px;
+          margin-bottom: 25px;
+          position: relative;
+     }
+
+     .inputname + label{
+          position: absolute;
+          cursor: pointer;
+          top: -20px;
+          left: 2px;
+          z-index: 1;
+          transition: 0.4s;
+     }
+
+     .inputname:focus{
+          background-color: rgba(0, 191, 255, 0.495);
+     }
+
+     .inputname:placeholder-shown + label{
+          border: none;
+          border-bottom: 2px solid transparent;
+          transform: translateY(20px);
+     }
+
+     .inputname:focus + label{
+          border: none;
+          border-bottom: 2px solid transparent;
+          transform: translateY(-0.5px);
+     } 
+}

@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Магазин</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="busketimage.css">
+        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="socialbtn.css">
+        <script src="Buybasket.js"></script>
+    </head>
+    <body id="backgroundsites">
+        <header>
+            <input type="checkbox" id="burger-check">
+            <label id="burger" for="burger-check">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </label>
+             <nav class = "menupos">
+                <ul>
+                    <li><a href="index.html">Современные ОС</a></li>
+                    <li><a href="account.html">Связь</a></li>
+                    <li><a href="buysite.html">Покупка</a></li>
+                    <li><a href="reg.html">Вход</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="pos">
+            <div class="gap">
+                <img src="pictures/Win10.jpg">
+                <button id="+" onclick="AddItem(item1, cart)">+</button>
+                <button id="-" onclick="RemoveItem(item1, cart)">-</button>
+                <input class="inputs" id="input-item1" type="text" value="0">
+            </div>
+            <div class="gap">
+                <img src="pictures/Win11.jpg">
+                <button onclick="AddItem(item2, cart)">+</button>
+                <button onclick="RemoveItem(item2, cart)">-</button>
+                <input class="inputs" id="input-item2" type="text" value="0">
+            </div>
+            <div id="asidebtn">
+                <button class="buttonClear" onclick="clearCart()"></button>
+            </div>
+        </div>
+        <div class="cart-container">
+        </div>
+        <footer>
+            <a href="account.html">Связаться</a>
+            <p for="aboutme">Обо мне</p><br>
+            <textarea id="aboutme" name="about" rows="6" cols="30" readonly disabled >Сайт создан для обзора различных операционных систем, создание
+    мнение о них и выбор той операционной системы, которая понравилась больше всего.
+            </textarea>
+            <div id="flexsocial">
+                <div class="socialmedia">
+                    <img class="img" src="pictures/VK.png">
+                </div>
+                <div class="socialmedia">
+                    <img class="img" src="pictures/Telegram.png">
+                </div>
+                <div class="socialmedia">
+                    <img class="img" src="pictures/YouTube.png">
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+#pos{
+    display: flex;
+    background-color: gray;
+}
+div > img{
+    display: flex;
+    height: 300px;
+    width: 200px;
+    margin-left: 5px;
+}
+.buttonDelete{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 75%;
+}
+.buttonClear{
+    background-image: url("pictures/ClearBusket.png");
+    background-size: 100% 100%; /*Размер картинки*/
+    height: 3rem;
+    width: 3rem;
+    border-radius: 75%;
+}
+.inputs{
+    height: 25px;
+    width: 100px;
+}
+.massive{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 3rem;
+    width: 3rem;
+}

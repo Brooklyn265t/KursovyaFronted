@@ -1,0 +1,105 @@
+footer{
+    background-color: rgb(0, 0, 0);
+    display: grid;
+}
+#flexcont{
+    display: grid;
+}
+
+footer a, footer p{
+    margin-top: 10px;
+    margin-left: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    color: orange;
+}
+
+#aboutme{
+    height: 90%;
+    width: 90%;
+    margin-left: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: orange;
+    overflow-wrap: anywhere;/*перенос*/
+    resize: none; /* Запрещаем изменять размер */
+    background-color: mediumslateblue;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+    footer{
+        background-color: rgb(0, 0, 0);
+        display: grid;
+    }
+    
+    footer a, footer p{
+        margin-top: 10px;
+        margin-left: 25px;
+        font-family: 'Courier New', Courier, monospace;
+        color: orange;
+    }
+    
+    #aboutme{
+        height: 90%;
+        width: 90%;
+        margin-left: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        color: orange;
+        overflow-wrap: anywhere;/*перенос*/
+        resize: none; /* Запрещаем изменять размер */
+        background-color: mediumslateblue;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    footer{
+        background-color: rgb(0, 0, 0);
+        display: grid;
+    }
+    #flexcont{
+        display: grid;
+    }
+    
+    footer a, footer p{
+        margin-top: 10px;
+        margin-left: 25px;
+        font-family: 'Courier New', Courier, monospace;
+        color: orange;
+    }
+    
+    #aboutme{
+        height: 90%;
+        width: 90%;
+        margin-left: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        color: orange;
+        overflow-wrap: anywhere;/*перенос*/
+        resize: none; /* Запрещаем изменять размер */
+        background-color: mediumslateblue;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1920px){
+    footer{
+        background-color: rgb(0, 0, 0);
+        display: grid;
+    }
+    
+    footer a, footer p{
+        margin-top: 10px;
+        margin-left: 25px;
+        font-family: 'Courier New', Courier, monospace;
+        color: orange;
+        font-size: 2rem;
+    }
+    
+    #aboutme{
+        height: 70%;
+        width: 70%;
+        margin-left: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 2rem;
+        color: orange;
+        overflow-wrap: anywhere;/*перенос*/
+        resize: none; /* Запрещаем изменять размер */
+        background-color: mediumslateblue;
+    }
+}

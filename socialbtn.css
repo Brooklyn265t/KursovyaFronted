@@ -1,0 +1,133 @@
+#flexsocial{
+    display: flex;
+}
+
+/*flex-grow и flex-shrink*/
+.socialmedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: gray;
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5em;
+    cursor: pointer;
+    z-index: 0;
+    color: white;
+    
+}
+
+.socialmedia .img{
+    width: 75%;
+    height: 75%;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialmedia::before{
+    content: '';
+    background-image: linear-gradient(45deg,#22c1c3, #fdbb2d);
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    transition: height 0.9s ease-in;
+}
+
+.socialmedia:hover::before{
+    height: 100%;
+    transition: height 0.9s ease-in;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+    #flexsocial{
+        display: flex;
+    }
+    
+    /*flex-grow и flex-shrink*/
+    .socialmedia{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: gray;
+        width: 3rem;
+        height: 3rem;
+        margin: 0.5em;
+        cursor: pointer;
+        z-index: 0;
+        color: white;
+        
+    }
+    
+    .socialmedia .img{
+        width: 75%;
+        height: 75%;
+    }
+    
+    .socialmedia::before{
+        content: '';
+        background-image: linear-gradient(45deg,#22c1c3, #fdbb2d);
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        z-index: -1;
+        transition: height 0.9s ease-in;
+    }
+    
+    .socialmedia:hover::before{
+        height: 100%;
+        transition: height 0.9s ease-in;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1920px){
+    #flexsocial{
+        display: flex;
+    }
+    
+    /*flex-grow и flex-shrink*/
+    .socialmedia{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: gray;
+        width: 6rem;
+        height: 6rem;
+        margin: 1em;
+        cursor: pointer;
+        z-index: 0;
+        color: white;
+        
+    }
+    
+    .socialmedia .img{
+        width: 75%;
+        height: 75%;
+    }
+    
+    .socialmedia::before{
+        content: '';
+        background-image: linear-gradient(45deg,#22c1c3, #fdbb2d);
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        z-index: -1;
+        transition: height 0.9s ease-in;
+    }
+    
+    .socialmedia:hover::before{
+        height: 100%;
+        transition: height 0.9s ease-in;
+    }
+}

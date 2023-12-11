@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>Новости ОС</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="pictures/windows_favicon.png" sizes="any">
+        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="newsbackground.css">
+        <link rel="stylesheet" href="btn.css">
+        <link rel="stylesheet" href="notification.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="socialbtn.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="notif">
+            <div id="indicator">0</div>
+            <ul id="listnotif">
+            </ul>
+        </div>
+        <script src="notification.js"></script>
+
+        <div class="btn4"></div>
+        <header>
+            <input type="checkbox" id="burger-check">
+            <label id="burger" for="burger-check">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </label>
+             <nav class = "menupos">
+                <ul>
+                    <li><a href="index.html">Современные ОС</a></li>
+                    <li><a href="account.html">Связь</a></li>
+                    <li><a href="buysite.html">Покупка</a></li>
+                    <li><a href="reg.html">Вход</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <div id = "newstext">
+                <h1>Новости</h1>
+                <p>
+                    На этой неделе компания Microsoft напомнила, что поддержка Windows 10 закончится 14 октября 2025 года,
+                    но предложила расширенную поддержку (Extended Security Updates, ESU), которую можно будет получить за дополнительную плату.
+                </p>
+                <blockquote>
+                    <p>
+                        «Хотя мы настоятельно рекомендуем перейти на Windows 11,
+                        мы понимаем, что существуют обстоятельства, которые могут помешать вам заменить устройства с Windows 10 до даты прекращения ее поддержки,
+                        — пишут представители Microsoft. — Поэтому Microsoft будет предлагать расширенные обновления безопасности».
+                    </p>
+                </blockquote>
+                <p>
+                    Как и в случае с программой ESU для Windows 7, которая завершилась 10 января текущего года, пользователи Windows 10 смогут оплатить ежегодную подписку, чтобы продолжать получать ежемесячные обновления безопасности в течение трех лет после окончания поддержки ОС.
+                    Стоимость ESU для Windows 10 пока не раскрывается. Однако можно предположить, что условия не будут сильно отличаться от аналогичной программы для Windows 7, которая стоила 50 долларов за одно устройство под управлением Windows 7 Pro в течение первого года; 100 долларов за второй год; и 200 долларов за третий. Для клиентов Windows Enterprise цена была вдвое ниже.
+                    В рамках Windows 10 ESU пользователям буду предоставляться только критические и важные обновления безопасности. Исправления для менее значимых недостатков, запросы каких-либо функции или прочие изменения рассматриваться не будут, а техническая поддержка тоже будет ограничена только вопросами безопасности.
+                </p>
+            </div>
+        </main>
+
+        <div class="btn-up"></div>
+
+        <div>
+            <button id="likeButton" onclick="changeColor()">Нравится</button>
+            <script src="likebutton.js"></script>
+        </div>
+
+        <footer>
+            <a href="account.html">Связаться</a>
+            <p for="aboutme">Обо мне</p><br>
+            <textarea id="aboutme" name="about" rows="6" cols="30" readonly disabled >Сайт создан для обзора различных операционных систем, создание
+    мнение о них и выбор той операционной системы, которая понравилась больше всего.
+            </textarea>
+            <div id="flexsocial">
+                <div class="socialmedia">
+                    <img class="img" src="pictures/VK.png">
+                </div>
+                <div class="socialmedia">
+                    <img class="img" src="pictures/Telegram.png">
+                </div>
+                <div class="socialmedia">
+                    <img class="img" src="pictures/YouTube.png">
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

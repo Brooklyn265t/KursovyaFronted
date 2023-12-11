@@ -1,0 +1,70 @@
+.card2flex {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    
+}
+
+.card2 {
+    position: relative;
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: blue;
+    transition: transform 0.3s, filter 0.3s;
+    overflow: hidden;
+    
+}
+
+.radiu{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background-color: brown;
+    clip-path: circle(75px at center 0);
+    text-align: center;
+    padding-top: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card2flex:hover .card2{
+    filter: blur(10px);
+}
+.card2flex .card2:hover{
+    filter: blur(0px);
+    transform: scale(1.3);
+}
+/* .card2:hover {
+    transform: scale(1.3);
+}
+    
+.card2:hover ~ .card2 {
+    filter: blur(10px);
+}
+
+
+.card2flex:hover:not(.card2:first-child:hover) .card2:first-child {
+    filter: blur(10px);
+}
+
+.card2flex:hover .card2:first-child:hover .card2:nth-child {
+    filter: blur(0);
+}
+
+.card2flex .card2:nth-child(2):hover{
+    filter: blur(0);
+}
+.card2flex .card2:nth-child(2):hover ~ .card2 {
+    filter: blur(10px);
+}
+
+.card2flex:hover .card2:nth-child(3):hover .card2:first-child, .card2:nth-child(2) {
+    filter: blur(10px);
+} */

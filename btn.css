@@ -1,0 +1,20 @@
+.btn-up {
+  background: transparent no-repeat center center; /*transparent прозрачный фон*/
+  background-size: 90% 90%;
+  background-image: url("pictures/circle.png");
+  position: fixed; /* фиксированное позиционирование относительно области просмотра*/
+  background-color: grey; /* цвет фона */
+  right: 30px; /* расстояние от правого края окна браузера */
+  bottom: 10px; /* расстояние от нижнего края окна браузера */
+  border-top-left-radius: 8px;   /* скругление верхнего левого угла */
+  border-top-right-radius: 8px;   /* скругление верхнего правого угла */
+  cursor: pointer;   /* вид курсора */
+  width: 50px; /* ширина элемента */
+  height: 50px; /* высота элемента */
+}
+
+@media (hover: hover) {
+  .btn-up:hover {
+    background-color: dodgerblue; /* цвет заднего фона при наведении */
+  }
+}

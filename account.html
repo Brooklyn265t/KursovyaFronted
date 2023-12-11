@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Как связаться</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="pictures/favicon_sup.png" sizes="any">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="backgroundaccount.css">
+        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="socialbtn.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="captcha.css">
+        <script src="captcha.js"></script>
+    </head>
+    <body id="backgroundsites">
+        <header>
+            <input type="checkbox" id="burger-check">
+            <label id="burger" for="burger-check">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </label>
+             <nav class = "menupos">
+                <ul>
+                    <li><a href="index.html">Современные ОС</a></li>
+                    <li><a href="account.html">Связь</a></li>
+                    <li><a href="buysite.html">Покупка</a></li>
+                    <li><a href="reg.html">Вход</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                </ul>
+            </nav>
+        </header>
+    <div id="forma">
+        <form action = "" method="get">
+            <p>Как с вами связаться?</p>
+            <div class="namebefore">
+                <input type="text" name="name" required placeholder=" " class="inputname">
+                <label id="setname">Имя</label>
+            </div>
+
+            <div class="namebefore">
+                <input type="email" name="email" required placeholder=" " class="inputname">
+                <label id="email">Email</label>
+            </div>
+            <button type="submit">Отправить</button><!--кликабельная кнопка-->
+        </form>
+    </div>
+    <div>
+        <div id="user-input" class="block">
+            <input type="text" id="submit" placeholder="Captcha code" />
+        </div>
+     
+        <div id="image"
+             selectable="False">
+        </div>
+        <input type="submit" id="btn" onclick="printmsg()"/>
+
+        <p id="key"></p>
+    </div>
+    <footer>
+        <a href="account.html">Связаться</a>
+        <p for="aboutme">Обо мне</p><br>
+        <textarea id="aboutme" name="about" rows="6" cols="30" readonly disabled >Сайт создан для обзора различных операционных систем, создание
+мнение о них и выбор той операционной системы, которая понравилась больше всего.
+        </textarea>
+        <div id="flexsocial">
+            <div class="socialmedia">
+                <img class="img" src="pictures/VK.png">
+            </div>
+            <div class="socialmedia">
+                <img class="img" src="pictures/Telegram.png">
+            </div>
+            <div class="socialmedia">
+                <img class="img" src="pictures/YouTube.png">
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>

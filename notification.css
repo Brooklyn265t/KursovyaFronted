@@ -1,0 +1,59 @@
+.notif {
+    height: 3rem; /*задаёт размер относительно размера шрифта элемента <html>*/
+    width: 3rem;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    right: 90px; /* расстояние от правого края окна браузера */
+    bottom: 10px; /* расстояние от нижнего края окна браузера */
+    position: fixed;
+    background-color: purple;
+    cursor: pointer;   /* вид курсора */
+    animation: none;
+}
+
+#indicator {
+    position: absolute;
+    right: 0%;
+    top: -10%;
+    left: 60%;
+    bottom: 70%;
+    background-color: rgb(17, 205, 222);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes circle-to-triangle {
+    from 0%{
+        border-radius: 50%;
+    }
+    to 100%{
+        border-radius: 0%;
+    }
+}
+
+.notif:hover{
+    height: 300px;
+    width: 200px;
+    border-radius: 0%;
+    background-color: gold;
+    animation-name: circle-to-triangle;
+    animation-duration: 2s;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    animation-delay: -0.1s;
+}
+
+
+.notif ul {
+    display: none;
+}
+
+.notif:hover ul{
+    display: block;
+    font-size: 1.3rem; /*задаёт размер относительно размера шрифта элемента <html>*/
+}
+.notif:hover #indicator{
+    display: none;
+}
