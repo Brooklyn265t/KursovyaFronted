@@ -4,8 +4,8 @@
 }
 div > img{
     display: flex;
-    height: 300px;
-    width: 200px;
+    height: 180px;
+    width: 120px;
     margin-left: 5px;
 }
 .buttonDelete{
