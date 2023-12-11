@@ -1,5 +1,5 @@
 .imagecards{
-    display: grid;
+    display: flex;
     gap: 5px; /*Отступы с стобцах и строках между элементами*/
 }
 
@@ -75,7 +75,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
   .imagecards{
-    display: flex;
+    display: grid;
     gap: 5px; /*Отступы с стобцах и строках между элементами*/
   }
 
